@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto Altiplano - Asistente de voz</title>
+  <script
+    src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
+    async
+    type="text/javascript">
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f5f9;
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+    main {
+      background: white;
+      padding: 40px;
+      margin: 20px;
+      border-radius: 16px;
+      max-width: 600px;
+      box-shadow: 0 4px 18px #0001;
+    }
+    h1 { color: #17365d; }
+    p { line-height: 1.6; color: #444; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Instituto Altiplano</h1>
+    <h2>Asistente virtual de voz</h2>
+    <p>
+      Bienvenido. Puedes conversar con nuestro asistente
+      virtual para recibir información del instituto.
+    </p>
+    <p>Presiona el botón de voz que aparece en la pantalla.</p>
+  </main>
+
+  <vapi-widget
+    public-key="c8bcdf64-1664-4b7c-8705-892ba2c1c334"
+    assistant-id="b85ad84a-ad60-4218-ac72-c0acdf375f03"
+    mode="voice"
+    theme="light"
+    size="compact"
+    main-label="Instituto Altiplano"
+    start-button-text="Iniciar conversación"
+    end-button-text="Finalizar llamada"
+    empty-voice-message="Presiona para hablar con el instituto"
+  ></vapi-widget>
+</body>
+</html>
