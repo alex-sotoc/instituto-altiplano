@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto Altiplano | Portal del proyecto</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+    header {
+      background: #12345a;
+      color: white;
+      text-align: center;
+      padding: 42px 20px;
+    }
+    header h1 { margin: 0 0 10px; }
+    header p { margin: 0; }
+    main {
+      max-width: 950px;
+      margin: 35px auto;
+      padding: 0 18px;
+    }
+    .intro, .card, .contact {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 12px #0000000d;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .card h2 { margin-top: 0; color: #12345a; }
+    .card p { line-height: 1.5; min-height: 48px; }
+    .button {
+      display: inline-block;
+      background: #1764a5;
+      color: white;
+      text-decoration: none;
+      padding: 12px 17px;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+    .button:hover { background: #0e4778; }
+    .note { color: #475569; line-height: 1.6; }
+    footer {
+      text-align: center;
+      padding: 22px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Instituto Altiplano</h1>
+  <p>Portal de acceso al sistema de atención automatizada</p>
+</header>
+
+<main>
+  <section class="intro">
+    <h2>Bienvenido</h2>
+    <p class="note">
+      Desde este portal puedes probar los diferentes componentes
+      desarrollados para el proyecto: asistente de voz, bot de Telegram,
+      formulario de constancias y registro de información.
+    </p>
+  </section>
+
+  <section class="cards">
+
+    <article class="card">
+      <h2>Asistente de voz</h2>
+      <p>
+        Interactúa mediante voz con el asistente virtual del Instituto Altiplano.
+      </p>
+      <a class="button" href="asistente.html">Abrir asistente</a>
+    </article>
+
+    <article class="card">
+      <h2>Bot de Telegram</h2>
+      <p>
+        Consulta información y realiza preguntas al bot institucional,
+        que incorpora inteligencia artificial para atender las consultas.
+      </p>
+      <a class="button"
+         href="https://t.me/altiplano_Tecnm_bot"
+         target="_blank" rel="noopener">
+        Abrir Telegram
+      </a>
+    </article>
+
+    <article class="card">
+      <h2>Solicitud de constancias</h2>
+      <p>
+        Accede al formulario para realizar una solicitud de constancia.
+      </p>
+      <a class="button"
+         href="https://docs.google.com/forms/d/e/1FAIpQLScX1wBon5aHZXr53IWliy2MbbYgh8g8Furj7gdArI5w59xbqg/viewform?usp=header"
+         target="_blank" rel="noopener">
+        Abrir formulario
+      </a>
+    </article>
+
+    <article class="card">
+      <h2>Registro y seguimiento</h2>
+      <p>
+        Consulta la hoja de cálculo donde se registran y organizan
+        los casos atendidos por el sistema.
+      </p>
+      <a class="button"
+         href="https://docs.google.com/spreadsheets/d/1Bc0Uf8tVrkMYpPHGVqIsJAASXPOGz5XtRd9oL8gmDc0/edit?usp=sharing"
+         target="_blank" rel="noopener">
+        Abrir Google Sheets
+      </a>
+    </article>
+
+  </section>
+
+  <section class="contact">
+    <h2>Contacto y observaciones</h2>
+    <p class="note">
+      Correo de contacto del proyecto:
+      <strong>kodaproyecto@gmail.com</strong>
+    </p>
+    <p class="note">
+      Para probar Google Sheets es necesario contar con los permisos
+      correspondientes. Si no tienes acceso, solicita autorización.
+    </p>
+  </section>
+</main>
+
+<footer>
+  Proyecto: El Instituto que nunca duerme
+</footer>
+
+</body>
+</html>
